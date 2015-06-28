@@ -1,4 +1,4 @@
-package com.test.zhikangzhou.cherry.activity;
+package cherry.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.test.zhikangzhou.cherry.R;
+import cherry.cherry.R;
 
 
 public class WelcomeActivity extends Activity {
@@ -32,7 +32,7 @@ public class WelcomeActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_welcome, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 

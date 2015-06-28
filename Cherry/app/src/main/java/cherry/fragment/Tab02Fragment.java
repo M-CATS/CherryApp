@@ -1,4 +1,4 @@
-package com.test.zhikangzhou.cherry.fragment;
+package cherry.fragment;
 
 
 import android.os.Bundle;
@@ -7,15 +7,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.test.zhikangzhou.cherry.R;
+import cherry.cherry.R;
+
 
 /**
- * A simple {@link Fragment} subclass.
+ * A simple {@link android.app.Fragment} subclass.
  */
-public class Tab03Fragment extends Fragment {
+public class Tab02Fragment extends Fragment {
 
 
-    public Tab03Fragment() {
+    public Tab02Fragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +25,7 @@ public class Tab03Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tab03, container, false);
+        return inflater.inflate(R.layout.fragment_tab02, container, false);
     }
 
 

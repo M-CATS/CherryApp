@@ -1,4 +1,4 @@
-package com.test.zhikangzhou.cherry.fragment;
+package cherry.fragment;
 
 
 import android.os.Bundle;
@@ -7,10 +7,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.test.zhikangzhou.cherry.R;
+import cherry.cherry.R;
+
 
 /**
- * A simple {@link Fragment} subclass.
+ * A simple {@link android.app.Fragment} subclass.
  */
 public class Tab01Fragment extends Fragment {
 

@@ -1,12 +1,10 @@
-package com.test.zhikangzhou.cherry.activity;
+package cherry.activity;
 
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.graphics.Color;
-import android.net.wifi.p2p.WifiP2pManager;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,10 +12,11 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.test.zhikangzhou.cherry.R;
-import com.test.zhikangzhou.cherry.fragment.Tab01Fragment;
-import com.test.zhikangzhou.cherry.fragment.Tab02Fragment;
-import com.test.zhikangzhou.cherry.fragment.Tab03Fragment;
+import cherry.cherry.R;
+import cherry.fragment.Tab01Fragment;
+import cherry.fragment.Tab02Fragment;
+import cherry.fragment.Tab03Fragment;
+
 
 public class MainActivity extends Activity implements View.OnClickListener{
     private LinearLayout mTab01;
@@ -38,6 +37,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         setContentView(R.layout.activity_main);
         initView();
         initEvent();
+        setSelect(0);
     }
 
     void initView(){
@@ -85,39 +85,27 @@ public class MainActivity extends Activity implements View.OnClickListener{
             case 0:
                 mFragmentTab01 = new Tab01Fragment();
                 trans.replace(R.id.id_fragment, mFragmentTab01);
-                mTextView01.setTextColor(Color.parseColor("#367d9c"));
-                mTextView02.setTextColor(Color.parseColor("#A4A4A4"));
-                mTextView03.setTextColor(Color.parseColor("#A4A4A4"));
+                mTab01.setBackgroundColor(Color.parseColor("#367d9c"));
+                mTab02.setBackgroundColor(Color.parseColor("#333334"));
+                mTab03.setBackgroundColor(Color.parseColor("#333334"));
+
                 break;
             case 1:
                 mFragmentTab02 = new Tab02Fragment();
                 trans.replace(R.id.id_fragment, mFragmentTab02);
-                mTextView02.setTextColor(Color.parseColor("#367d9c"));
-                mTextView01.setTextColor(Color.parseColor("#A4A4A4"));
-                mTextView03.setTextColor(Color.parseColor("#A4A4A4"));
+                mTab02.setBackgroundColor(Color.parseColor("#367d9c"));
+                mTab01.setBackgroundColor(Color.parseColor("#333334"));
+                mTab03.setBackgroundColor(Color.parseColor("#333334"));
                 break;
             case 2:
                 mFragmentTab03 = new Tab03Fragment();
                 trans.replace(R.id.id_fragment, mFragmentTab03);
-                mTextView03.setTextColor(Color.parseColor("#367d9c"));
-                mTextView01.setTextColor(Color.parseColor("#A4A4A4"));
-                mTextView02.setTextColor(Color.parseColor("#A4A4A4"));
+                mTab03.setBackgroundColor(Color.parseColor("#367d9c"));
+                mTab01.setBackgroundColor(Color.parseColor("#333334"));
+                mTab02.setBackgroundColor(Color.parseColor("#333334"));
                 break;
         }
         trans.commit();
-    }
-
-    public void hidFragment(FragmentTransaction trans) {
-        if (mTab01 != null) {
-            trans.hide(mFragmentTab01);
-        }
-        if (mTab02 != null) {
-            trans.hide(mFragmentTab02);
-        }
-        if (mTab03 != null) {
-            trans.hide(mFragmentTab03);
-        }
-
     }
 
     @Override

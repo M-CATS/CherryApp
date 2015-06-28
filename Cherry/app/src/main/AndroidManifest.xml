@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.test.zhikangzhou.cherry" >
-    <uses-permission android:name="android.permission.INTERNET" />
+    package="cherry.cherry" >
 
     <application
         android:allowBackup="true"
@@ -9,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".activity.WelcomeActivity"
+            android:name="cherry.activity.WelcomeActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,8 +17,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.MainActivity"
-            android:label="@string/title_activity_main" >
+            android:name="cherry.activity.MainActivity"
+            android:label="Main" >
         </activity>
     </application>
 
