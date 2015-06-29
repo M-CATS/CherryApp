@@ -25,6 +25,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     private TextView mTextView01;
     private TextView mTextView02;
     private TextView mTextView03;
+    private TextView mTextViewTitle;
     private Fragment mFragmentTab01;
     private Fragment mFragmentTab02;
     private Fragment mFragmentTab03;
@@ -47,6 +48,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         mTextView01=(TextView)findViewById(R.id.tv_tab01);
         mTextView02=(TextView)findViewById(R.id.tv_tab02);
         mTextView03=(TextView)findViewById(R.id.tv_tab03);
+        mTextViewTitle=(TextView)findViewById(R.id.tv_title);
     }
 
     void initEvent(){

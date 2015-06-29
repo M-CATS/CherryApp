@@ -20,6 +20,10 @@
             android:name="cherry.activity.MainActivity"
             android:label="Main" >
         </activity>
+        <activity
+            android:name="cherry.activity.TagActivity"
+            android:label="@string/title_activity_tag" >
+        </activity>
     </application>
 
 </manifest>

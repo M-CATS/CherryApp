@@ -3,33 +3,13 @@
     android:layout_height="match_parent"
     tools:context="com.test.zhikangzhou.cherry.activity.MainActivity">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="36dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:background="#367d9c"
-        android:gravity="center"
-        android:id="@+id/linearLayout2">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Cherry"
-            android:textColor="#ffffff"
-            android:id="@+id/tv_title" />
-    </LinearLayout>
-
     <FrameLayout
 
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"
         android:id="@+id/id_fragment"
-        android:layout_above="@+id/linearLayout"
-        android:layout_below="@+id/linearLayout2"></FrameLayout>
+        android:layout_above="@+id/linearLayout"></FrameLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
@@ -53,7 +33,7 @@
             android:paddingBottom="3dp">
 
             <ImageView
-                android:tint="#ffffff"
+                android:tint="@color/white"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:id="@+id/iv_tab01"
@@ -64,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#ffffff"
+                android:textColor="@color/white"
                 android:text="订阅"
                 android:id="@+id/tv_tab01"
                 android:textSize="10sp"
@@ -83,7 +63,7 @@
             android:paddingBottom="3dp">
 
             <ImageView
-                android:tint="#ffffff"
+                android:tint="@color/white"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:src="@mipmap/ic_explore_black"
@@ -91,7 +71,7 @@
                 android:id="@+id/iv_tab02" />
 
             <TextView
-                android:textColor="#ffffff"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
@@ -112,7 +92,7 @@
             android:paddingBottom="3dp">
 
             <ImageView
-                android:tint="#ffffff"
+                android:tint="@color/white"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:src="@mipmap/ic_person_outline_black"
@@ -120,7 +100,7 @@
                 android:id="@+id/iv_tab03" />
 
             <TextView
-                android:textColor="#ffffff"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
