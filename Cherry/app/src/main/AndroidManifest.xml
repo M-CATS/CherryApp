@@ -22,6 +22,7 @@
         </activity>
         <activity
             android:name="cherry.activity.TagActivity"
+            android:theme="@style/Transparent"
             android:label="@string/title_activity_tag" >
         </activity>
     </application>
