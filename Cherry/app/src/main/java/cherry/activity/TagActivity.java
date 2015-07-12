@@ -1,6 +1,10 @@
 package cherry.activity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
@@ -11,6 +15,9 @@ import android.renderscript.ScriptIntrinsicBlur;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -23,10 +30,12 @@ import cherry.widget.TagView;
 
 public class TagActivity extends Activity {
     private TextView mTagDone;
-
+    private Button mButtonSet;
     private TagListView mTagListView;
-    private final List<Tag> mTags = new ArrayList<Tag>();
-    private final String[] titles = {"安全必备", "音乐", "父母学", "上班族必备",
+    private Context mContext;
+    private TextView mInput;
+    private List<Tag> mTags = new ArrayList<Tag>();
+    private String[] titles = {"安全必备", "音乐", "父母学", "上班族必备",
             "360手机卫士", "QQ", "输入法", "微信", "最美应用", "AndevUI", "蘑菇街"};
 
     @Override
@@ -42,9 +51,11 @@ public class TagActivity extends Activity {
         setUpData();
         mTagListView.setTags(mTags);
         mTagDone=(TextView)findViewById(R.id.tag_done);
+        mButtonSet=(Button)findViewById(R.id.button_set);
     }
 
     void initEvent(){
+        mContext=this;
         mTagListView.setOnTagClickListener(new TagListView.OnTagClickListener() {
             @Override
             public void onTagClick(TagView tagView, Tag tag) {
@@ -64,6 +75,31 @@ public class TagActivity extends Activity {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+        mButtonSet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                new AlertDialog.Builder(mContext).setTitle("自定义标签").setMessage("设置自定义标签")
+//                        .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+//                            public void onClick(DialogInterface dialog, int which) {
+//
+//                            }
+//                        })
+//                        .setNegativeButton("取消", null)
+//                        .show();
+                EditText inputServer = new EditText(mContext);
+                inputServer.setWidth(50);
+                AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
+                builder.setTitle("自定义标签").setIcon(android.R.drawable.ic_dialog_info).setView(inputServer)
+                        .setNegativeButton("取消", null);
+                builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+                builder.show();
             }
         });
     }

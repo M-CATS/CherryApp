@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="20dp"
-    android:orientation="vertical" >
+    android:paddingTop="20dp"
+    android:orientation="vertical"
+    android:background="#ededed">
 
 
 
@@ -22,7 +23,7 @@
             android:paddingTop="16.0dip"
             android:text="标签"
             android:layout_weight="1"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="16.0sp" />
         <TextView
             android:id="@+id/tag_done"
@@ -34,7 +35,7 @@
             android:paddingRight="@dimen/common_margin"
             android:paddingTop="16.0dip"
             android:text="完成"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="16.0sp"
             android:gravity="right" />
     </LinearLayout>
@@ -74,6 +75,25 @@
             android:textColor="@color/white"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/common_margin"
+            android:layout_margin="5dp"
+            android:paddingRight="@dimen/common_margin"
+            android:paddingTop="16.0dip"
+            android:text="常用组合"
+            android:textColor="@color/black"
+            android:textSize="16.0sp"
+            android:gravity="right"
+            android:id="@+id/tv_common" />
     </LinearLayout>
 
 </LinearLayout>

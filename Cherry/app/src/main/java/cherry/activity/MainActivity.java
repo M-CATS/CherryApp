@@ -1,9 +1,11 @@
 package cherry.activity;
 
 import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentTransaction;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
@@ -18,7 +20,7 @@ import cherry.fragment.Tab02Fragment;
 import cherry.fragment.Tab03Fragment;
 
 
-public class MainActivity extends Activity implements View.OnClickListener{
+public class MainActivity extends FragmentActivity implements View.OnClickListener{
     private LinearLayout mTab01;
     private LinearLayout mTab02;
     private LinearLayout mTab03;
@@ -29,7 +31,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     private Fragment mFragmentTab01;
     private Fragment mFragmentTab02;
     private Fragment mFragmentTab03;
-    public FragmentManager fm = getFragmentManager();
+    public FragmentManager fm=getSupportFragmentManager();
     public FragmentTransaction trans = fm.beginTransaction();
 
     @Override
@@ -81,7 +83,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     }
 
     private void setSelect(int i) {
-        fm = getFragmentManager();
+        fm = getSupportFragmentManager();
         trans = fm.beginTransaction();
         switch (i) {
             case 0:
