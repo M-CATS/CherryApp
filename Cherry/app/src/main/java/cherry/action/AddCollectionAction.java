@@ -1,13 +1,24 @@
 package cherry.action;
 
+<<<<<<< HEAD
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
 import org.apache.http.Header;
 
+=======
+import org.apache.http.Header;
+
+import com.loopj.android.http.AsyncHttpResponseHandler;
+
+>>>>>>> origin/master
 import cherry.action.util.ActionBase;
 import cherry.action.util.CherryClient;
 import cherry.action.util.Responser;
 
+<<<<<<< HEAD
+=======
+//用户添加一条收藏
+>>>>>>> origin/master
 public class AddCollectionAction extends ActionBase {
 
 	public AddCollectionAction(String userid, String newsid) {

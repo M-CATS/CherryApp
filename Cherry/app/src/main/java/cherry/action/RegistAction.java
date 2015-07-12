@@ -1,15 +1,26 @@
 package cherry.action;
 
+<<<<<<< HEAD
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
 import org.apache.http.Header;
 import org.json.JSONException;
+=======
+import org.json.JSONException;
+import org.apache.http.Header;
+>>>>>>> origin/master
 
 import cherry.action.util.ActionBase;
 import cherry.action.util.CherryClient;
 import cherry.action.util.JsonHandler;
 import cherry.action.util.Responser;
 
+<<<<<<< HEAD
+=======
+import com.loopj.android.http.AsyncHttpResponseHandler;
+
+// ÓÃ»§×¢²á
+>>>>>>> origin/master
 public class RegistAction extends ActionBase {
 	
 	public RegistAction(String userid, String pwd) {

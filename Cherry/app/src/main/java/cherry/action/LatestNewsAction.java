@@ -1,15 +1,27 @@
 package cherry.action;
 
+<<<<<<< HEAD
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
 import org.apache.http.Header;
 import org.json.JSONException;
 
+=======
+import org.apache.http.Header;
+import org.json.JSONException;
+
+import com.loopj.android.http.AsyncHttpResponseHandler;
+
+>>>>>>> origin/master
 import cherry.action.util.ActionBase;
 import cherry.action.util.CherryClient;
 import cherry.action.util.JsonHandler;
 import cherry.action.util.Responser;
 
+<<<<<<< HEAD
+=======
+// 获取热门新闻
+>>>>>>> origin/master
 public class LatestNewsAction extends ActionBase {
 
 	public LatestNewsAction() {

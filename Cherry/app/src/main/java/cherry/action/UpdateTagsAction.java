@@ -1,19 +1,32 @@
 package cherry.action;
 
+<<<<<<< HEAD
 import com.loopj.android.http.AsyncHttpResponseHandler;
+=======
+import java.util.List;
+>>>>>>> origin/master
 
 import org.apache.http.Header;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+<<<<<<< HEAD
 import java.util.List;
 
+=======
+>>>>>>> origin/master
 import cherry.action.model.ViewTag;
 import cherry.action.util.ActionBase;
 import cherry.action.util.CherryClient;
 import cherry.action.util.Responser;
 
+<<<<<<< HEAD
+=======
+import com.loopj.android.http.AsyncHttpResponseHandler;
+
+// 按标签获取新闻
+>>>>>>> origin/master
 public class UpdateTagsAction extends ActionBase {
 
 	public UpdateTagsAction(String userid, List<ViewTag> taglist) {

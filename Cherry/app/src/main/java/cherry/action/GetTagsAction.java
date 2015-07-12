@@ -1,7 +1,10 @@
 package cherry.action;
 
+<<<<<<< HEAD
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
+=======
+>>>>>>> origin/master
 import org.apache.http.Header;
 import org.json.JSONException;
 
@@ -10,6 +13,12 @@ import cherry.action.util.CherryClient;
 import cherry.action.util.JsonHandler;
 import cherry.action.util.Responser;
 
+<<<<<<< HEAD
+=======
+import com.loopj.android.http.AsyncHttpResponseHandler;
+
+// 获取用户关注的标签
+>>>>>>> origin/master
 public class GetTagsAction extends ActionBase {
 
 	public GetTagsAction(String userid) {

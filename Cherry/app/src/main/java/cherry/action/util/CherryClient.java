@@ -6,7 +6,11 @@ import com.loopj.android.http.RequestParams;
 
 public abstract class CherryClient {
 
+<<<<<<< HEAD
 	private static final String BASE_URL = "http://10.66.27.8:9000";
+=======
+	private static final String BASE_URL = "http://192.168.1.106:9000";
+>>>>>>> origin/master
 
 	private static AsyncHttpClient client = new AsyncHttpClient();
 

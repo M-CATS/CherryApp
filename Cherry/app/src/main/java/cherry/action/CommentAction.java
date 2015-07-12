@@ -1,13 +1,24 @@
 package cherry.action;
 
+<<<<<<< HEAD
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
 import org.apache.http.Header;
 
+=======
+import org.apache.http.Header;
+
+import com.loopj.android.http.AsyncHttpResponseHandler;
+
+>>>>>>> origin/master
 import cherry.action.util.ActionBase;
 import cherry.action.util.CherryClient;
 import cherry.action.util.Responser;
 
+<<<<<<< HEAD
+=======
+// ÓÃ»§ÆÀÂÛ
+>>>>>>> origin/master
 public class CommentAction extends ActionBase {
 
 	public CommentAction(String userid, String newsid, String comment) {
